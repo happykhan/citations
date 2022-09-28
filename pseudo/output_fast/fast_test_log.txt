@@ -1,0 +1,59 @@
+####### Summary from annotate/reannotate #######
+Date/time:	2022-07-13 09:08:26
+
+#######    Files   #######
+Genome:	typhi_anno/PROKKA_07132022.gbk
+Database:	blastdb/sal_alleles.faa
+Reference Genome:	None
+BlastP:	fast_test_proteome.faa.blastP_output.tsv
+BlastX:	fast_test_intergenic.fasta.blastX_output.tsv
+Pseudogenes (GFF):	fast_test_pseudos.gff
+Pseudogenes (Fasta):	fast_test_pseudos.fasta
+Intact genes (GFF):	fast_test_intact.gff
+Intact genes (protein seq):	fast_test_intact.faa
+Intact genes (nucleotide seq):	fast_test_intact.ffn
+Chromosome map:	fast_test_map.pdf
+Interactive bar plot:	fast_test_interactive_results.html
+Interactive dN/dS plot:	None
+
+#######  Settings  #######
+threads:	4
+intergenic_length:	30
+length_pseudo:	0.65
+shared_hits:	0.5
+evalue:	1e-4
+hitcap:	15
+contig_ends:	False
+intergenic_threshold:	0.3
+diamond:	False
+skip_makedb:	False
+no_bidirectional_length:	False
+use_alignment:	False
+perc_cov:	0.25
+perc_id:	0.25
+max_dnds:	0.3
+use_deviation:	False
+
+####### Statistics #######
+#Input:
+Initial ORFs:	5052
+Initial pseudogenes:	0
+Number of contigs:	3
+#Output:
+Inital ORFs joined:	380
+Pseudogenes (total):	631
+Pseudogenes (too short):	176
+Pseudogenes (too long):	154
+Pseudogenes (fragmented):	275
+Pseudogenes (no predicted ORF):	26
+Pseudogenes (high dN/dS):	0
+Pseudogenes (frameshift):	0
+Pseudogenes (missing start codon):	0
+Pseudogenes (missing stop codon):	0
+Pseudogenes (internal stop codon):	0
+Pseudogenes (multiple issues):	0
+Intact genes:	4342
+
+####### Output Key #######
+Initial ORFs joined:	The number of input open reading frames that have been merged and flagged as a fragmented pseudogene.
+Intact genes:	[Initial ORFs] - [Initial ORFs joined] - [Pseudogenes (all except fragmented / intergenic)]
